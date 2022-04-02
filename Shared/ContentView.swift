@@ -20,10 +20,10 @@ struct ContentView: View {
 
                 VStack(spacing: 0) {
                     LinearGradient(gradient: Gradient(colors: [.white, .white.opacity(0)]), startPoint: .top, endPoint: .bottom)
-                        .opacity(0.3)
+                        .opacity(0.15)
 
                     LinearGradient(gradient: Gradient(colors: [.black.opacity(0), .black]), startPoint: .top, endPoint: .bottom)
-                        .opacity(0.5)
+                        .opacity(0.3)
                 }
             }
         }

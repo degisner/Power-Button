@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76382BC927F816D000857F38 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76382BC827F816D000857F38 /* Color.swift */; };
+		76382BCA27F816D000857F38 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76382BC827F816D000857F38 /* Color.swift */; };
 		768DB72D27F7495D007AC0A1 /* Power_ButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB71D27F7495B007AC0A1 /* Power_ButtonApp.swift */; };
 		768DB72E27F7495D007AC0A1 /* Power_ButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB71D27F7495B007AC0A1 /* Power_ButtonApp.swift */; };
 		768DB72F27F7495D007AC0A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB71E27F7495B007AC0A1 /* ContentView.swift */; };
 		768DB73027F7495D007AC0A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB71E27F7495B007AC0A1 /* ContentView.swift */; };
 		768DB73127F7495D007AC0A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768DB71F27F7495D007AC0A1 /* Assets.xcassets */; };
 		768DB73227F7495D007AC0A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768DB71F27F7495D007AC0A1 /* Assets.xcassets */; };
+		768DB73C27F74CDB007AC0A1 /* PowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB73B27F74CDB007AC0A1 /* PowerButton.swift */; };
+		768DB73D27F74CDB007AC0A1 /* PowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB73B27F74CDB007AC0A1 /* PowerButton.swift */; };
+		768DB73F27F75126007AC0A1 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB73E27F75126007AC0A1 /* ButtonStyle.swift */; };
+		768DB74027F75126007AC0A1 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DB73E27F75126007AC0A1 /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76382BC827F816D000857F38 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		768DB71D27F7495B007AC0A1 /* Power_ButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power_ButtonApp.swift; sourceTree = "<group>"; };
 		768DB71E27F7495B007AC0A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		768DB71F27F7495D007AC0A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		768DB72427F7495D007AC0A1 /* Power Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		768DB72A27F7495D007AC0A1 /* Power Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		768DB72C27F7495D007AC0A1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		768DB73B27F74CDB007AC0A1 /* PowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerButton.swift; sourceTree = "<group>"; };
+		768DB73E27F75126007AC0A1 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			children = (
 				768DB71D27F7495B007AC0A1 /* Power_ButtonApp.swift */,
 				768DB71E27F7495B007AC0A1 /* ContentView.swift */,
+				768DB73B27F74CDB007AC0A1 /* PowerButton.swift */,
+				768DB73E27F75126007AC0A1 /* ButtonStyle.swift */,
+				76382BC827F816D000857F38 /* Color.swift */,
 				768DB71F27F7495D007AC0A1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,7 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768DB73C27F74CDB007AC0A1 /* PowerButton.swift in Sources */,
+				768DB73F27F75126007AC0A1 /* ButtonStyle.swift in Sources */,
 				768DB72F27F7495D007AC0A1 /* ContentView.swift in Sources */,
+				76382BC927F816D000857F38 /* Color.swift in Sources */,
 				768DB72D27F7495D007AC0A1 /* Power_ButtonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768DB73D27F74CDB007AC0A1 /* PowerButton.swift in Sources */,
+				768DB74027F75126007AC0A1 /* ButtonStyle.swift in Sources */,
 				768DB73027F7495D007AC0A1 /* ContentView.swift in Sources */,
+				76382BCA27F816D000857F38 /* Color.swift in Sources */,
 				768DB72E27F7495D007AC0A1 /* Power_ButtonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

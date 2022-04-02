@@ -11,7 +11,7 @@ struct ContentView: View {
                     indicator
                 }
         }
-        .frame(width: 280, height: 280)
+        .frame(width: 400, height: 400)
         .background {
             ZStack {
                 Image("texture")
@@ -40,8 +40,8 @@ struct ContentView: View {
 
     var indicator: some View {
         Circle()
-            .frame(width: 4, height: 4)
-            .offset(y: -12)
+            .frame(width: 6, height: 6)
+            .offset(y: -24)
             .foregroundColor(isIndicatorOn ? .accentColor : .black.opacity(0.3))
             .background(alignment: .center) {
                 if isIndicatorOn {
@@ -53,17 +53,17 @@ struct ContentView: View {
     var sparkle: some View {
         ZStack {
             Circle()
-                .frame(width: 4, height: 4)
-                .offset(y: -12)
+                .frame(width: 6, height: 6)
+                .offset(y: -24)
                 .foregroundColor(.accentColor)
-                .blur(radius: 4)
+                .blur(radius: 6)
                 .opacity(0.6)
 
             Circle()
-                .frame(width: 8, height: 8)
-                .offset(y: -12)
+                .frame(width: 12, height: 12)
+                .offset(y: -24)
                 .foregroundColor(.accentColor)
-                .blur(radius: 8)
+                .blur(radius: 12)
                 .opacity(0.4)
         }
     }

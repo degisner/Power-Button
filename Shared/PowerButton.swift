@@ -3,8 +3,8 @@ import SwiftUI
 struct PowerButton: View {
     @Binding var isOn: Bool
 
-    let size: CGFloat = 68
-    let innerSize: CGFloat = 64
+    let size: CGFloat = 136
+    let innerSize: CGFloat = 128
 
     var body: some View {
         Button {
@@ -14,10 +14,11 @@ struct PowerButton: View {
                 gapView
 
                 Circle()
+                    .foregroundColor(.pureBlack)
                     .frame(width: innerSize, height: innerSize)
-                    .shadow(color: .black.opacity(0.28), radius: isOn ? 1 : 6, x: 0, y: isOn ? 1 : 12)
-                    .shadow(color: .black.opacity(0.08), radius: isOn ? 1 : 3, x: 0, y: isOn ? 1 : 6)
-                    .shadow(color: .black.opacity(0.24), radius: isOn ? 1 : 2, x: 0, y: isOn ? 1 : 4)
+                    .shadow(color: .pureBlack.opacity(0.28), radius: isOn ? 2 : 12, x: 0, y: isOn ? 2 : 24)
+                    .shadow(color: .pureBlack.opacity(0.08), radius: isOn ? 2 : 6, x: 0, y: isOn ? 2 : 12)
+                    .shadow(color: .pureBlack.opacity(0.24), radius: isOn ? 2 : 4, x: 0, y: isOn ? 2 : 8)
                     .overlay {
                         ZStack {
                             innerView
@@ -38,30 +39,30 @@ struct PowerButton: View {
             .overlay {
                 ZStack {
                     Circle()
-                        .stroke(Color.black, lineWidth: 24)
-                        .frame(width: innerSize + 26, height: innerSize + 26)
+                        .stroke(Color.pureBlack, lineWidth: 48)
+                        .frame(width: innerSize + 52, height: innerSize + 52)
                         .shadow(
                             color: Color.white.opacity(isOn ? 0.03 : 0.04),
-                            radius: 7, x: 0, y: -16
+                            radius: 14, x: 0, y: -32
                         )
                         .background {
                             iconView
                         }
 
                     Circle()
-                        .stroke(Color.black, lineWidth: 24)
-                        .frame(width: innerSize + 26, height: innerSize + 26)
+                        .stroke(Color.pureBlack, lineWidth: 48)
+                        .frame(width: innerSize + 52, height: innerSize + 52)
                         .shadow(
-                            color: Color.black.opacity(isOn ? 0.3 : 0.28),
-                            radius: 16, x: 0, y: 16
+                            color: Color.pureBlack.opacity(isOn ? 0.3 : 0.28),
+                            radius: 32, x: 0, y: 32
                         )
 
                     Circle()
-                        .stroke(Color.black, lineWidth: 24)
-                        .frame(width: innerSize + 26, height: innerSize + 26)
+                        .stroke(Color.pureBlack, lineWidth: 48)
+                        .frame(width: innerSize + 52, height: innerSize + 52)
                         .shadow(
-                            color: Color.black.opacity(isOn ? 0.16 : 0.12),
-                            radius: 4, x: 0, y: 8
+                            color: Color.pureBlack.opacity(isOn ? 0.16 : 0.12),
+                            radius: 8, x: 0, y: 16
                         )
                 }
             }
@@ -71,7 +72,7 @@ struct PowerButton: View {
     var iconView: some View {
         Image("icon")
             .resizable()
-            .frame(width: 28, height: 28)
+            .frame(width: 56, height: 56)
             .opacity(isOn ? 1 : 0.9)
     }
 
@@ -86,13 +87,13 @@ struct PowerButton: View {
                 lineWidth: 2
             )
             .clipShape(Circle())
-            .opacity(isOn ? 0.09 : 0.2)
+            .opacity(isOn ? 0.08 : 0.2)
     }
 
     var gapView: some View {
         Circle()
             .foregroundColor(.pureBlack)
-            .opacity(0.5)
+            .opacity(0.6)
             .overlay {
                 Circle()
                     .stroke(
